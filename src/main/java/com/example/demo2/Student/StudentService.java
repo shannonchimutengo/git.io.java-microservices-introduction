@@ -28,6 +28,6 @@ public final StudentRepository studentRepository;
         if (studentOptional.isPresent()){
             throw new IllegalMonitorStateException("email is taken");
         }
-
+        System.out.println(student);
     }
 }
