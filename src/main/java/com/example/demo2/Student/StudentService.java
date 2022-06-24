@@ -17,10 +17,9 @@ public final StudentRepository studentRepository;
     }
 
     public List<Student> getStudents() {
+
         return studentRepository.findAll();
     }
-
-
     public void addNewStudent(Student student) {
         Optional<Student>studentOptional = studentRepository
                 .findStudentsByEmail(student.getEmail());
