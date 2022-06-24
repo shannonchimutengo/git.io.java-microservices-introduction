@@ -27,6 +27,8 @@ public final StudentRepository studentRepository;
 
         if (studentOptional.isPresent()){
             throw new IllegalMonitorStateException("email is taken");
+        }else {
+            studentRepository.save(student);
         }
         System.out.println(student);
     }
