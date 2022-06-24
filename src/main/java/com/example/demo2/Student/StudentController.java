@@ -25,4 +25,11 @@ private  final StudentService studentService;
      studentService.addNewStudent(student);
 
     }
+    @DeleteMapping({"studentId"})
+    public void  DeleteStudent(@PathVariable("studentId") Long studentId){
+
+    studentService.deleteStudent(studentId);
+
+    }
+
 }

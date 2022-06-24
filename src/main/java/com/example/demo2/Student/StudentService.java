@@ -32,4 +32,7 @@ public final StudentRepository studentRepository;
         }
         System.out.println(student);
     }
+
+    public void deleteStudent(Long studentId) {
+    }
 }
